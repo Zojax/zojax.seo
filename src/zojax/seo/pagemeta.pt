@@ -2,6 +2,8 @@
       tal:attributes="content view/description" />
 <meta name="keywords" tal:condition="view/keywords"
       tal:attributes="content view/keywords" />
+<link rel="canonical" tal:attributes="href view/canonicalLink"
+      tal:condition="view/canonicalLink"/>
 
 <tal:block tal:repeat="element view/elements"
 	   tal:content="structure element/render" />

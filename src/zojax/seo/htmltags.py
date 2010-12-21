@@ -97,6 +97,7 @@ class PageMeta(object):
 
     keywords = u''
     description = u''
+    canonicalLink = u''
 
     def update(self):
         super(PageMeta, self).update()
@@ -106,13 +107,16 @@ class PageMeta(object):
         if tags is not None and tags.isAvailable():
             self.keywords = tags.keywords
             self.description = tags.description
+            self.canonicalLink = tags.canonicalLink
 
         if not self.description:
             dc = IDCDescriptiveProperties(context, None)
             if dc is not None:
                 self.description = dc.description
 
-        if not self.description or not self.keywords:
+        if not self.description \
+            or not self.keywords \
+            or not self.canonicalLink:
             tags = IHTMLTags(getSite(), None)
             if tags is not None and tags.isAvailable():
                 if not self.description:
@@ -120,3 +124,6 @@ class PageMeta(object):
 
                 if not self.keywords:
                     self.keywords = tags.keywords
+                
+                if not self.canonicalLink:
+                    self.canonicalLink = tags.canonicalLink

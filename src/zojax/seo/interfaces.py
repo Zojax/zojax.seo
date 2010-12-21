@@ -65,3 +65,9 @@ class IHTMLTags(interface.Interface):
         description = _('Content for html meta tag - keywords.'),
         default = u'',
         required = False)
+    
+    canonicalLink = schema.TextLine(
+        title = _('Canonical Link'),
+        description = _('Link for html meta tag - link rel="canonical"'),
+        default = u'',
+        required = False)

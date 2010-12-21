@@ -144,6 +144,7 @@ Test seo tags for content that supports seo.tags extension
     >>> admin.open("http://localhost/pcontent/context.html/seo/")
     >>> admin.getControl('Title').value = u'Content title'
     >>> admin.getControl('Description').value = u'Content description'
+    >>> admin.getControl('Canonical Link').value = u'http://localhost/pcontent'
     >>> admin.getControl('Keywords').value = u'Content keywords'
     >>> admin.getControl('Save').click()
 
@@ -153,7 +154,7 @@ Test seo tags for content that supports seo.tags extension
       <head>
         <title>
           Content title - top
-        </title><meta name="description" content="Content description" /><meta name="keywords" content="Content keywords" />
+        </title><meta name="description" content="Content description" /><meta name="keywords" content="Content keywords" /><link rel="canonical" href="http://localhost/pcontent" />
       </head>
     ...
     </html>
@@ -174,6 +175,7 @@ Check seo tags for portal object
     >>> admin.open("http://localhost/context.html/seo/")
     >>> admin.getControl('Title').value = u'Default portal title'
     >>> admin.getControl('Description').value = u'Default portal description'
+    >>> admin.getControl('Canonical Link').value = u'http://localhost'
     >>> admin.getControl('Keywords').value = u'Default portal keywords'
     >>> admin.getControl('Save').click()
 
@@ -183,7 +185,7 @@ Check seo tags for portal object
       <head>
         <title>
            Default portal title
-        </title><meta name="description" content="Default portal description" /><meta name="keywords" content="Default portal keywords" />
+        </title><meta name="description" content="Default portal description" /><meta name="keywords" content="Default portal keywords" /><link rel="canonical" href="http://localhost" />
       </head>
     ...
     </html>
@@ -196,7 +198,7 @@ Check content
       <head>
         <title>
            Simple content - Default portal title
-        </title><meta name="description" content="Default portal description" /><meta name="keywords" content="Default portal keywords" />
+        </title><meta name="description" content="Default portal description" /><meta name="keywords" content="Default portal keywords" /><link rel="canonical" href="http://localhost" />
       </head>
     ...
     </html>
@@ -207,7 +209,7 @@ Check content
       <head>
         <title>
           Content title - Default portal title
-        </title><meta name="description" content="Content description" /><meta name="keywords" content="Content keywords" />
+        </title><meta name="description" content="Content description" /><meta name="keywords" content="Content keywords" /><link rel="canonical" href="http://localhost/pcontent" />
       </head>
     ...
     </html>
