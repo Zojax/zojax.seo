@@ -43,6 +43,12 @@ Disallow: /
         description = _(u'Robots'),
         default = u'',
         required = False)
+    
+    titleSeparator = schema.TextLine(
+        title = _('Title tag separator'),
+        description = _('Used to separate site title and content title'),
+        default = u'-',
+        required = True)
 
 
 class IHTMLTags(interface.Interface):
@@ -53,6 +59,12 @@ class IHTMLTags(interface.Interface):
         description = _('Content for title html head tag.'),
         default = u'',
         required = False)
+    
+    appendSiteTitle = schema.Bool(
+        title = _('Append Site Title'),
+        description = _('Append site title to title.'),
+        default = True,
+        required = True)
 
     description = schema.TextLine(
         title = _('Description'),

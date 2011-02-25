@@ -27,7 +27,7 @@ from zojax.wizard.step import WizardStepForm
 from zojax.wizard.interfaces import ISaveable
 from zojax.content.type.interfaces import IContentType, IPortalType
 
-from interfaces import _, IHTMLTags
+from interfaces import _, IHTMLTags, ISEO
 
 
 class HTMLTags(object):
@@ -68,11 +68,13 @@ class HTMLTagsEditForm(WizardStepForm):
 class PageTitle(object):
 
     notRoot = False
+    titleSeparator = ''
 
     def update(self):
         super(PageTitle, self).update()
         context = self.context
         request = self.request
+        self.titleSeparator = component.getUtility(ISEO).titleSeparator
 
         if not ISite.providedBy(context):
             self.notRoot = True
@@ -87,6 +89,8 @@ class PageTitle(object):
 
         tags = IHTMLTags(context, None)
         if tags is not None and tags.isAvailable() and tags.title:
+            if not tags.appendSiteTitle:
+                self.notRoot = False
             self.title = tags.title
         else:
             self.title = getMultiAdapter(
