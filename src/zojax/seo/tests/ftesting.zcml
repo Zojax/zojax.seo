@@ -6,7 +6,8 @@
 
   <!-- This file is the equivalent of site.zcml and it is -->
   <!-- used for functional testing setup -->
-
+  
+  <exclude package="zc.copy" file="overrides.zcml" />
   <include package="zojax.autoinclude" file="meta.zcml" />
   <includeAllDependencies package="zojax.seo" extras="test" />
 
