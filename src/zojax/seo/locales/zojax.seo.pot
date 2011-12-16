@@ -1,0 +1,120 @@
+##############################################################################
+#
+# Copyright (c) 2003-2004 Zope Corporation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: Development/Unknown\n"
+"POT-Creation-Date: Thu Dec  8 23:26:05 2011\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: src/zojax/seo/configure.zcml:74
+msgid "This extension allow change content html head tags."
+msgstr ""
+
+#: src/zojax/seo/configure.zcml:8
+msgid "SEO"
+msgstr ""
+
+#: src/zojax/seo/configure.zcml:8
+msgid "SEO tools for site."
+msgstr ""
+
+#: src/zojax/seo/content.py:130
+msgid "HTML title tag"
+msgstr ""
+
+#: src/zojax/seo/content.py:195
+msgid "[No title]"
+msgstr ""
+
+#: src/zojax/seo/content.py:87
+msgid "No content."
+msgstr ""
+
+#: src/zojax/seo/htmltags.py:49
+#: src/zojax/seo/configure.zcml:74
+msgid "SEO html tags"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:28
+msgid "Enabled"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:29
+msgid "Enable SEO for this site."
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:34
+#: src/zojax/seo/interfaces.py:35
+#: src/zojax/seo/interfaces.py:43
+msgid "Robots"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:42
+msgid "Sitemap"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:48
+msgid "Title tag separator"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:49
+msgid "Used to separate site title and content title"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:58
+msgid "Title"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:59
+msgid "Content for title html head tag."
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:64
+msgid "Append Site Title"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:65
+msgid "Append site title to title."
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:70
+msgid "Description"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:71
+msgid "Content for html meta tag - description."
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:76
+msgid "Keywords"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:77
+msgid "Content for html meta tag - keywords."
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:82
+msgid "Canonical Link"
+msgstr ""
+
+#: src/zojax/seo/interfaces.py:83
+msgid "Link for html meta tag - link rel=\"canonical\""
+msgstr ""
+
