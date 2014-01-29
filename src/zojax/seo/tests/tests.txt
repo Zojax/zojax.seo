@@ -152,12 +152,14 @@ Test seo tags for content that supports seo.tags extension
     >>> print anon.contents
     <html>
       <head>
-        <title>
-          Content title&nbsp;-&nbsp;top
-        </title><meta name="description" content="Content description" /><meta name="keywords" content="Content keywords" /><link rel="canonical" href="http://localhost/pcontent" />
+         <title>
+        Content title&nbsp;-&nbsp;top
+    </title>
+            <meta name="description" content="Content description" /><meta name="keywords" content="Content keywords" /><link rel="canonical" href="http://localhost/pcontent" />
       </head>
     ...
     </html>
+
 
 Check seo tags for portal object
 
@@ -183,9 +185,10 @@ Check seo tags for portal object
     >>> print admin.contents
     <html>
       <head>
-        <title>
-           Default portal title
-        </title><meta name="description" content="Default portal description" /><meta name="keywords" content="Default portal keywords" /><link rel="canonical" href="http://localhost" />
+         <title>
+      Default portal title
+    </title>
+            <meta name="description" content="Default portal description" /><meta name="keywords" content="Default portal keywords" /><link rel="canonical" href="http://localhost" />
       </head>
     ...
     </html>
@@ -196,9 +199,10 @@ Check content
     >>> print anon.contents
     <html>
       <head>
-        <title>
-           Simple content&nbsp;-&nbsp;Default portal title
-        </title><meta name="description" content="Default portal description" /><meta name="keywords" content="Default portal keywords" /><link rel="canonical" href="http://localhost" />
+         <title>
+        Simple content&nbsp;-&nbsp;Default portal title
+    </title>
+            <meta name="description" content="Default portal description" /><meta name="keywords" content="Default portal keywords" /><link rel="canonical" href="http://localhost" />
       </head>
     ...
     </html>
@@ -207,12 +211,14 @@ Check content
     >>> print anon.contents
     <html>
       <head>
-        <title>
-          Content title&nbsp;-&nbsp;Default portal title
-        </title><meta name="description" content="Content description" /><meta name="keywords" content="Content keywords" /><link rel="canonical" href="http://localhost/pcontent" />
+         <title>
+        Content title&nbsp;-&nbsp;Default portal title
+    </title>
+            <meta name="description" content="Content description" /><meta name="keywords" content="Content keywords" /><link rel="canonical" href="http://localhost/pcontent" />
       </head>
     ...
     </html>
+
 
 
 SEO configlet contents
